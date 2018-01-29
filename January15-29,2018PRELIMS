@@ -1,0 +1,64 @@
+Prelims
+(January 15-29,2018)
+
+WHAT IS WWW OR SO CALL WORLD WIDE WEB?
+
+The World Wide Web (www) is combination of all resources and users on the Internet that are using the Hypertext Transfer Protocol (HTTP). It is the universe of network accessible information, and embodiment of human knowledge.
+
+The Web, as it's commonly known, is often confused with the internet. Although the two are intricately connected, they are different things. The internet is, as its name implies, a network- a vast, global network that incorporates a multitude of lesser networks. As such, the internet consists of supporting infrastructure and other technologies. In contrast, the Web is a communications model that, through HTTP, enables the exchange of information over the internet.
+
+World Wide Web was ivented by Sir Tim-Berners Lee in 1989, He is a British computer scientist, Born in London and his parents were computer scientists who worked on the earliest computers.
+He Graduated from Oxford University as an Software Engineer.
+
+In March 1989, Tim laid out his vision for what would become the web in a document called "Information Management" then He began work using a NeXT computer, one of Steve Jobs’ early products.
+
+By Octover of 1990, Tim had written the three fundamental technologies that remain foundation of today's web.
+	HTML: HyperText Markup Language- The markup language for the web
+	URI: Uniform Resource Identifier- A kind of "address" that is unique and used to identify each resource on the web. It is also commonly called a URL
+	HTTP: Hypertxt Transfer Protocol- Allows for the retrieval of linked resources from across the web.
+
+Tim also wrote the first web page editor/browser ("WorldWideWeb.app") and the first web server ("httpd"). By the end of 1990, the first web page was served on the open internet, and in 1991, people outside of CERN were invited to join the new web community.
+
+As the web began to grow, Tim realised that its true potential would only be unleashed if anyone, anywhere could use it without paying a fee or having to as for permission.
+
+Reference: 
+https://webfoundation.org/about/vision/history-of-the-web/
+
+WHAT IS HTTP OR SO CALLEd HYPERTEXT TRANSFER PROTOCOL?
+
+Hypertext Transfer Protocol are set of rules for transferring files such as Images, Sound, Videos, Text, and more multimedia Files on the World Wide Web. HTTP is an application that runs on top of the TCP/IP suite of protocols.
+
+Web Server Machine contains, in addition to the Web page files it can server, an HTTP daemon a program that is design to wait for HTTP request to be handled when that arrive. The  Web browser is a HTTP client, sending request to the server machine. If the browser user enters the files requests by either opening a Web file or clicking a link, the browser builds and HTTP request and send it to the IP Address indicated by the URL. The HTTP daemon receives the request and sends back the requested file or files associated with the request.
+
+Reference:
+http://searchwindevelopment.techtarget.com/definition/HTTP
+
+HTTP 1.0(RFC 1945) MAY 1996 - The Hypertext Transfer Protocol (HTTP) is an application-level
+   protocol with the lightness and speed necessary for distributed,
+   collaborative, hypermedia information systems. It is a generic,
+   stateless, object-oriented protocol which can be used for many tasks,
+   such as name servers and distributed object management systems,
+   through extension of its request methods (commands). A feature of
+   HTTP is the typing of data representation, allowing systems to be
+   built independently of the data being transferred.
+
+   Reference:
+   https://tools.ietf.org/html/rfc1945
+
+HTTP 1.1 (RFC 2616) June 1999 - The Hypertext Transfer Protocol is an application-level protocol for distributed, collaborative, hypermedia information systems. It is a generic, stateless, protocol which can be used for many tasks beyond its use for hypertext, such as name servers and distributed object management systems, through extension of its request methods, error codes and headers. A feature of HTTP is the typing and negotiation of data representation, allowing systems to be built independently of the data being transferred.
+
+Reference:
+https://www.ietf.org/rfc/rfc2616.txt
+
+HTTP 2.0 (RFC 7540) May 2015 - This specification describes an optimized expression of the semantics
+   of the Hypertext Transfer Protocol, referred to as HTTP
+   version 2.  HTTP/2 enables a more efficient use of network
+   resources and a reduced perception of latency by introducing header
+   field compression and allowing multiple concurrent exchanges on the
+   same connection.  It also introduces unsolicited push of
+   representations from servers to clients.
+   This specification is an alternative to, but does not obsolete, the
+   HTTP/1.1 message syntax.  HTTP's existing semantics remain unchanged.
+
+Reference:
+https://tools.ietf.org/html/rfc7540
