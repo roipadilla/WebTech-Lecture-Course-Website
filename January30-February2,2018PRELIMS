@@ -1,0 +1,48 @@
+Prelims
+___________________________________
+January 30,2018 and February 2,2018
+___________________________________
+
+HTTP Resources Addressing
+	-are identified using URI(Uniform Resources Indetifiers).Unlike web data formats, where HTML is an important one, but not the only one, and web protocols, where HTTP has a similar status, there is only one Web naming/addressing technology
+URI:are short strings that identify resources in the web like documents, images, downloadable files, services, and other resources. They make resources available under a variety of naming schemes and access methods such as HTTP, FTP, and Internet mail addressable.
+
+HTTP Request
+	Whenever your web browser fetches a file  from a web server, it does so using HTTP. Your computer sends a request for some file, and the web server sends back a response.
+	That request which your computer sends to the web server contains all sorts of  interesting information.
+
+	Request Method - to indicate the desired action to be performed for a given resource.
+
+	Request Target - an inbound connection is obtained, the client sends an HTTP request message  with a request-target derived from the target URI.
+		*origin-from - a client must send only the absolute path and query components of the target URI as the request-target.
+
+		*absolute-form - a client MUST send the target URI in absolute-form as the request-target.
+
+		*asterisk-form - When a client wishes to request OPTIONS for the server as a whole, as opposed to a specific named resource of that server, the client must send only "*" as the request-target.
+
+	Request Protocol Version
+
+HTTP Response
+	-A Status-line. Zero or more header indicating the end of the header fields. Optionally a message-body.
+
+HTTP Status Codes
+	-The Status-Code element is a 3-digit integer result code of the attempt to understand and satisfy the request.
+
+	- 1xx: Informational - Request received, continuing process
+
+    - 2xx: Success - The action was successfully received, understood, and accepted
+
+    - 3xx: Redirection - Further action must be taken in order to complete the request
+
+    - 4xx: Client Error - The request contains bad syntax or cannot be fulfilled
+
+    - 5xx: Server Error - The server failed to fulfill an apparently valid request
+
+HTTP Extensions
+	-The HTTP Extension Framework describes a generic extension mechanism for HTTP, which is designed to address the tension between private agreement and public specification and to accommodate extension of applications using HTTP clients, servers, and proxies.
+
+Reference: 	www.w3.ord.org
+			docs.oracle.com
+	(Padagdag nalang dito)
+
+
