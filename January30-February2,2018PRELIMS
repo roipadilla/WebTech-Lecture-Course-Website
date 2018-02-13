@@ -6,6 +6,16 @@ ___________________________________
 HTTP Resources Addressing
 	-are identified using URI(Uniform Resources Indetifiers).Unlike web data formats, where HTML is an important one, but not the only one, and web protocols, where HTTP has a similar status, there is only one Web naming/addressing technology
 URI:are short strings that identify resources in the web like documents, images, downloadable files, services, and other resources. They make resources available under a variety of naming schemes and access methods such as HTTP, FTP, and Internet mail addressable.
+	•scheme(http/https) - URI that is compliant to HTTP
+	•authority - user information or authentication credentials
+	•host
+		→ domain name (resolved to an IP address using DNS) of the server where the resource resides (or will be created)
+			- every domain name consists an IP address (like contacts in phone)
+		→ port number
+	•path to resource (resolved relative to the document root ont the server)
+		- may refer to a static or dynamic resource
+	•query - typically provided as key-value pairs with ampersand(&) separators between key/value pairs
+		- may be URL-encoded (% sign)
 
 HTTP Request
 	Whenever your web browser fetches a file  from a web server, it does so using HTTP. Your computer sends a request for some file, and the web server sends back a response.
@@ -22,9 +32,104 @@ HTTP Request
 
 	Request Protocol Version
 
-HTTP Response
-	-A Status-line. Zero or more header indicating the end of the header fields. Optionally a message-body.
+HTTP Request Line
+	• Request Line (CRLF - terminated line consisting of 3 space separated values)
+	
+HTTP Request Methods
+	Standard Methods - This allows user agents to represent other methods, such as POST, PUT and DELETE, in a special way, so that the user is made aware of the fact that a possibly unsafe action is being requested.
+		• GET - simply fetch data
+		• HEAD - same as GET method but retrieve only the METADATA (Header)
+		• POST - Data will be re-submitted (the browser should alert the user that the data are about to be re-submitted)
+			- enclosed as a body
+			- safer than Get
+		• PUT - creates/replace the state of the target resource
+			- Uploads a representation of the specified URI
+		• DELETE - Deletes the specified resource
+		• OPTIONS - the purpose is to let the user know what to do and what can only be done
+			- shows allowed HTTP request methods (Standard)
+		• TRACE - repeats the request done
+			- used to invoke a remote, application-layer loop- back of the request message.
+		•CONNECT - Converts the request connection to a transparent TCP/IP tunnel
+	
+	Safe Methods - methods that can be cached, prefetched without any repercussions to the resource.
+		• HEAD
+		• GET
+		• OPTIONS
+		
+	Idempotent Methods - the expectation is the same even if PUT and DELETE is used
+		• OPTIONS
+		• GET
+		• HEAD
+		• PUT
+		• DELETE
+	Cacheable Methods - response isallowed to be stored for future use
 
+HTTP Response
+	STATUS LINE - Zero or more header indicating the end of the header fields. Optionally a message-body.
+	STATUS CODE and REASON PHRASE
+		Information(1xx)
+		100	continiue
+		101	Switching Protocols
+
+		SUCCESS(2xx)
+		200	Ok*
+		201	Created*
+		202	Accepted
+		203	Non-Authorative Information
+		204	No Content*
+		205	Reset Content
+		206	Partial Content
+
+		REDIRECTION(3xx)
+		300	Multiple choices
+		301 Moved Permanently
+		302 Found
+		303 See Other
+		304 Not Modified*
+		305 Use Proxy
+		306 (Unused)
+		307 Temporary Redirect
+
+		Client Error(4xx)
+		400 Bad Request*
+		401 Unauthorized*
+		402 Payment Required
+		403 Forbidden*
+		404 Not Found*
+		405 Method Not Allowed
+		406 Not Acceptable
+		407 Proxy Authentication Required
+		408 Request Timeout
+		409 Conflict*
+		410 Gone
+		411 Length Required
+		412 Precondition Failed
+		413 Request Entity Too Large
+		414 Request-URI Too Long
+		415 Unsupported Media Type
+		416 Requested Range Not Satisfiable
+		417 Expectation Failed
+		426 Upgrade Required
+		428 Precondition Required
+		429 Too Many Requests
+		431 Request Header Fields Too Large
+		451 Unavailable For Legal Reasons
+
+		Server Error(5xx)
+		500 Internal Server Error*
+		501 Not Implemented
+		502 Bad Gateway/ DNS Lookup Failed
+		503 Service Unavailable
+		504 Gateway Timeout
+		505 HTTP Version Not Supported
+		506 Variant Also Negotiates
+		507 Insufficient Storage
+		508 Loop Detected (WebDAV)
+		510 Not Extended
+		511 Network Authentication Required
+		598 Network read timeout error
+		599 Network connect timeout error
+	
 HTTP Status Codes
 	-The Status-Code element is a 3-digit integer result code of the attempt to understand and satisfy the request.
 
@@ -41,8 +146,26 @@ HTTP Status Codes
 HTTP Extensions
 	-The HTTP Extension Framework describes a generic extension mechanism for HTTP, which is designed to address the tension between private agreement and public specification and to accommodate extension of applications using HTTP clients, servers, and proxies.
 
+HTTP Protocol
+HTTP is based on a client-server architecture
+HTTP is a stateless communications protocol
+	• servers don't keep information about client in between request
+HTTP provides support for other functionalities such as:
+	• cache control
+	• content media type (MIME) specification
+	• language and character set specification
+	• content/transfer codings
+	• content negotiation
+	• client-server protocol negotiations
+	• persistent connections → HTTP 2 - reuse of connection
+	• requests pipelining/multiplexing → Pipelining - multiple requests at a time
+	• authentication/authorization → HTTP accommodates the provision of authenticating requests
+
 Reference: 	www.w3.ord.org
 			docs.oracle.com
+			https://www.w3schools.com/tags/ref_httpmethods.asp
+			http://restcookbook.com/HTTP%20Methods/idempotency/
+			https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html
 	(Padagdag nalang dito)
 
 
