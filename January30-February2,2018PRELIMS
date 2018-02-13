@@ -63,6 +63,8 @@ HTTP Request Methods
 		• PUT
 		• DELETE
 	Cacheable Methods - response isallowed to be stored for future use
+		• GET
+		• HEAD
 
 HTTP Response
 	STATUS LINE - Zero or more header indicating the end of the header fields. Optionally a message-body.
@@ -82,53 +84,53 @@ HTTP Response
 
 		REDIRECTION(3xx)
 		300	Multiple choices
-		301 Moved Permanently
-		302 Found
-		303 See Other
-		304 Not Modified*
-		305 Use Proxy
-		306 (Unused)
-		307 Temporary Redirect
+		301 	Moved Permanently
+		302 	Found
+		303 	See Other
+		304 	Not Modified*
+		305 	Use Proxy
+		306 	(Unused)
+		307 	Temporary Redirect
 
 		Client Error(4xx)
-		400 Bad Request*
-		401 Unauthorized*
-		402 Payment Required
-		403 Forbidden*
-		404 Not Found*
-		405 Method Not Allowed
-		406 Not Acceptable
-		407 Proxy Authentication Required
-		408 Request Timeout
-		409 Conflict*
-		410 Gone
-		411 Length Required
-		412 Precondition Failed
-		413 Request Entity Too Large
-		414 Request-URI Too Long
-		415 Unsupported Media Type
-		416 Requested Range Not Satisfiable
-		417 Expectation Failed
-		426 Upgrade Required
-		428 Precondition Required
-		429 Too Many Requests
-		431 Request Header Fields Too Large
-		451 Unavailable For Legal Reasons
+		400 	Bad Request*
+		401 	Unauthorized*
+		402 	Payment Required
+		403 	Forbidden*
+		404 	Not Found*
+		405 	Method Not Allowed
+		406 	Not Acceptable
+		407 	Proxy Authentication Required
+		408 	Request Timeout
+		409 	Conflict*
+		410 	Gone
+		411 	Length Required
+		412 	Precondition Failed
+		413 	Request Entity Too Large
+		414 	Request-URI Too Long
+		415 	Unsupported Media Type
+		416 	Requested Range Not Satisfiable
+		417 	Expectation Failed
+		426 	Upgrade Required
+		428 	Precondition Required
+		429 	Too Many Requests
+		431 	Request Header Fields Too Large
+		451 	Unavailable For Legal Reasons
 
 		Server Error(5xx)
-		500 Internal Server Error*
-		501 Not Implemented
-		502 Bad Gateway/ DNS Lookup Failed
-		503 Service Unavailable
-		504 Gateway Timeout
-		505 HTTP Version Not Supported
-		506 Variant Also Negotiates
-		507 Insufficient Storage
-		508 Loop Detected (WebDAV)
-		510 Not Extended
-		511 Network Authentication Required
-		598 Network read timeout error
-		599 Network connect timeout error
+		500 	Internal Server Error*
+		501 	Not Implemented
+		502 	Bad Gateway/ DNS Lookup Failed
+		503 	Service Unavailable
+		504 	Gateway Timeout
+		505 	HTTP Version Not Supported
+		506 	Variant Also Negotiates
+		507 	Insufficient Storage
+		508 	Loop Detected (WebDAV)
+		510 	Not Extended
+		511 	Network Authentication Required
+		598 	Network read timeout error
+		599 	Network connect timeout error
 	
 HTTP Status Codes
 	-The Status-Code element is a 3-digit integer result code of the attempt to understand and satisfy the request.
@@ -166,6 +168,8 @@ Reference: 	www.w3.ord.org
 			https://www.w3schools.com/tags/ref_httpmethods.asp
 			http://restcookbook.com/HTTP%20Methods/idempotency/
 			https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html
+			https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html
+			https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
 	(Padagdag nalang dito)
 
 
