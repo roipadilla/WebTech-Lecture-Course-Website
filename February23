@@ -1,0 +1,61 @@
+The DIV Element
+	--The DIV is used to section out  or break contents of an html document. It defines the division of block
+	elements. The div tag allows us  to take sections of an html document and apply certain positions and styles 
+	to them by assigning IDs and Classes.
+	    
+		ID -- Should be unique and should be applied to only one element in an html document 
+		Class -- Multiple elements can have  similar a class
+	
+			SYNTAX:
+					<div>......</div>
+	
+			EXAMPLE: 
+					<!DOCTYPE html>
+					<html>
+						<body>
+							<div id="quote">
+							<p>Break some rules, enjoy your life</p>
+							<p> These lines are inside a div</p>
+						</div>
+					</body>
+					</html>
+			 
+
+
+	Flow Content - is the majority of the elements inside the body tag and would normally be included in the normal flow
+				   of the document.
+				   
+				List of Flow Content Elements:
+				
+				 <a>, <abbr>, <address>, <article>, <aside>, <audio>, <b>,<bdo>, <bdi>, <blockquote>, <br>,
+				 <button>, <canvas>, <cite>, <code>, <command>, <data>, <datalist>, <del>, <details>, <dfn>,
+				 <div>, <dl>, <em>, <embed>, <fieldset>, <figure>, <footer>, <form>, <h1>, <h2>, <h3>, <h4>, 
+				 <h5>, <h6>, <header>, <hgroup>, <hr>, <i>, <iframe>, <img>, <input>, <ins>, <kbd>, <keygen>,
+				 <label>, <main>, <map>, <mark>, <math>, <menu>, <meter>, <nav>, <noscript>, <object>, <ol>, 
+				 <output>, <p>, <pre>, <progress>, <q>, <ruby>, <s>, <samp>, <script>, <section>, <select>,
+				 <small>, <span>, <strong>, <sub>, <sup>, <svg>, <table>, <template>, <textarea>, <time>, 
+				 <ul>, <var>, <video>, <wbr> and Text.
+				
+	Phrasing Content - is the text odf an html document as well as the elements that mark up the text.
+				
+				List of Elements:
+				
+				<abbr>, <audio>, <b>, <bdo>, <br>, <button>, <canvas>, <cite>, <code>, <command>, <data>, 
+				<datalist>, <dfn>, <em>, <embed>, <i>, <iframe>, <img>, <input>, <kbd>, <keygen>, <label>, 
+				<mark>, <math>, <meter>, <noscript>, <object>, <output>, <progress>, <q>, <ruby>, <samp>, 
+				<script>, <select>, <small>, <span>,<strong>, <sub>, <sup>, <svg>, <textarea>, <time>, 
+				<var>, <video>, <wbr> and plain text 
+				
+      ATTRIBUTES - Attributes are made up of two parts: a name and a value
+                  It is used to define the characteristics of an HTML element and is placed inside the element's opening tag.
+						
+						The name is the property you want to set. For example, the paragraph <p> element in the example 
+						carries an attribute whose name is color, which you can use to change the font color of paragraph 
+						on the page.
+
+						The value is what you want the value of the property to be set and always put within quotations. 
+					
+							Example: <font color = "blue "> This text will appear blue.</font>
+							
+				Global Attributes - are attributes that can be used or common to any HTML element, but have no effect on some
+                    				HTML elements.
